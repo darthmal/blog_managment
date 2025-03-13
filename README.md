@@ -72,11 +72,11 @@ A Spring Boot application that provides RESTful APIs for managing blog articles 
    - Right-click and select Run
    - Or use Maven: `mvn spring-boot:run`
 9. The application will start on http://localhost:8080 (or the port specified in your .env file)
-10. Access Swagger UI: http://localhost:8080/swagger-ui.html
+10. Access Swagger UI: http://localhost:8080/blog-management-app/swagger-ui.html
 
 ## API Testing with Swagger UI
 
-Access Swagger UI at http://localhost:8080/swagger-ui.html
+Access Swagger UI at http://localhost:8080/blog-management-app/swagger-ui.html
 - Test all blog endpoints
 - View schema documentation for request and response models
 
