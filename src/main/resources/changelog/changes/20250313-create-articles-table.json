@@ -1,0 +1,78 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "20250313_1",
+        "author": "Salam O",
+        "comment": "Create articles table",
+        "changes": [
+          {
+            "createTable": {
+              "tableName": "articles",
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "type": "bigint",
+                    "autoIncrement": true,
+                    "constraints": {
+                      "nullable": false,
+                      "primaryKey": true
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "title",
+                    "type": "varchar(255)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "content",
+                    "type": "text",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "publication_date",
+                    "type": "timestamptz",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "created_at",
+                    "type": "timestamptz",
+                    "defaultValueComputed": "CURRENT_TIMESTAMP",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "updated_at",
+                    "type": "timestamptz",
+                    "defaultValueComputed": "CURRENT_TIMESTAMP",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
